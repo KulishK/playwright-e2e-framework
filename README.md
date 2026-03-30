@@ -45,6 +45,14 @@ This repository showcases advanced QA Engineering practices:
 4. **Data Isolation:** `utils/testData.ts` enforces that hardcoded text values (usernames, validation strings) don't litter test files, enabling rapid maintenance when copy/content changes occur.
 5. **Cross-Environment Execution:** Use `.env` coupled with `cross-env` inside the `package.json` to effortlessly switch targets (Dev / Staging) using `npm run test:dev`.
 
+## 🧠 React QA & Autonomy Mindset
+
+This repository is designed with a "React-first" testing mentality, explicitly showcasing how to **move quickly, work autonomously, and identify gaps**:
+
+* **Edge Case Coverage:** See `tests/dashboard.spec.ts` for an example of proactively intercepting network requests (`page.route()`) to simulate `500 Internal Server Errors`. This proves the UI gracefully handles API failure states (a common gap in standard E2E suites).
+* **Gap Analysis Strategy:** The `docs/TEST_STRATEGY.md` file outlines the definitive methodology for identifying coverage gaps, verifying state transitions (`useState`, `useEffect`), and prioritizing testing pipelines without constant management oversight.
+* **AI-Assisted Test Generation:** To scale test creation rapidly across hundreds of workflows, the architecture is deliberately modular. Common functions are cleanly exported so that internal AI code-assistants (like `claude-code`) can instantly generate new test specs without hallucinations or rewriting boilerplate.
+
 ## ⚙️ How to Setup & Run
 
 ### 1. Installation
