@@ -23,4 +23,4 @@ To avoid flaky tests often associated with Single Page Applications (SPAs):
 - **Data Fixtures:** Using Playwright fixtures to inject realistic, faked data directly into the application state prior to test execution to avoid dependencies on volatile staging databases.
 
 ---
-*Authored by the QA Engineering Team as the foundational blueprint for scalable quality.*
+*Authored by Kulish Kulshrestha as the foundational blueprint for scalable quality.*
