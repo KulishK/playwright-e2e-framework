@@ -33,7 +33,7 @@ playwright-e2e-framework/
 
 ## 🛠 Features & Architecture
 
-This repository showcases advanced QA Engineering practices:
+This repository showcases advanced automation practices implemented by Kulish Kulshrestha:
 
 1. **Page Object Model (POM) + Dependency Injection:** Page elements and actions are encapsulated within the `pages/` directory. Rather than manually instantiating these pages in every block, Playwright Custom Fixtures (`fixtures/baseTest.ts`) inject these objects seamlessly into `test()` definitions.
 2. **Selector Strategy:** Standardized around Playwright's specific semantic locator functions (e.g., `.getByTestId()`, `hasText`) coupled with explicit `data-testid` attributes. This insulates tests from fragile CSS changes and heavily aids frontend refactors.
@@ -45,7 +45,7 @@ This repository showcases advanced QA Engineering practices:
 4. **Data Isolation:** `utils/testData.ts` enforces that hardcoded text values (usernames, validation strings) don't litter test files, enabling rapid maintenance when copy/content changes occur.
 5. **Cross-Environment Execution:** Use `.env` coupled with `cross-env` inside the `package.json` to effortlessly switch targets (Dev / Staging) using `npm run test:dev`.
 
-## 🧠 React QA & Autonomy Mindset
+## 🧠 React Testing & Autonomy Mindset by Kulish Kulshrestha
 
 This repository is designed with a "React-first" testing mentality, explicitly showcasing how to **move quickly, work autonomously, and identify gaps**:
 
@@ -82,4 +82,4 @@ npm run allure:open
 The `.github/workflows/playwright.yml` handles CI logic. Key benefits of this pipeline:
 - **Parallelism:** Tests are aggressively chunked automatically across available workers.
 - **Trace Viewer Retention:** Traces / Videos are retained specifically on *failure* in `playwright.config.ts`. In CI, they are bundled in the uploaded Github Artifacts for immediate debugging of fragile pipelines.
-- **Workflow Dispatch:** QA can manually run standard regressions with parameterized environments from the GitHub UI avoiding developer intervention.
+- **Workflow Dispatch:** Kulish Kulshrestha can manually run standard regressions with parameterized environments from the GitHub UI avoiding developer intervention.

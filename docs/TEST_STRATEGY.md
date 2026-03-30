@@ -19,7 +19,7 @@ To avoid flaky tests often associated with Single Page Applications (SPAs):
 - **State Hydration / Seeding:** Instead of testing the UI login flow repeatedly for every subsequent test, we programmatically authenticate via API (`request.post`), save the authentication state (`storageState`), and inject it into tests to save minutes of execution time.
 
 ## 3. Autonomous Execution & Speed Optimization
-- **Test Generation Integration:** We will leverage the provided internal `claude-code` skill to rapidly stub out repetitive Page Object methods and boilerplate test structures based on given Jira tickets/JDs, allowing the QA engineering focus to remain on complex integration logic and hard-to-reproduce edge cases.
+- **Test Generation Integration:** We will leverage the provided internal `claude-code` skill to rapidly stub out repetitive Page Object methods and boilerplate test structures based on given Jira tickets/JDs, allowing Kulish Kulshrestha's focus to remain on complex integration logic and hard-to-reproduce edge cases.
 - **Data Fixtures:** Using Playwright fixtures to inject realistic, faked data directly into the application state prior to test execution to avoid dependencies on volatile staging databases.
 
 ---
