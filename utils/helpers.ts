@@ -36,4 +36,14 @@ export class Helpers {
   static async takeScreenshot(page: Page, screenshotName: string) {
     await page.screenshot({ path: `test-results/screenshots/${screenshotName}.png`, fullPage: true });
   }
+
+  /**
+   * Robust wait strategy for React applications experiencing heavy async rendering.
+   * Waits until no network requests have been made for 500ms, proving the page is idle.
+   * Do NOT use hard waits (`waitForTimeout`). Use this instead for critical state settlements.
+   * @param page Playwright page object
+   */
+  static async waitForReactHydration(page: Page) {
+    await page.waitForLoadState('networkidle');
+  }
 }
