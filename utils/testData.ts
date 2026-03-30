@@ -8,7 +8,7 @@ export const testData = {
     password: 'secret_sauce'
   },
   dashboardExpectations: {
-    title: 'Swag Labs',
+    title: 'Products',
     headerText: 'Products',
     inventoryItemCount: 6
   }

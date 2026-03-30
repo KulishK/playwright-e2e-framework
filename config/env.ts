@@ -1,6 +1,6 @@
 export const ENV = {
   get BASE_URL() {
-    return process.env.BASE_URL || 'https://demo.playwright.dev';
+    return process.env.BASE_URL || 'https://www.saucedemo.com';
   },
   get USERNAME() {
     return process.env.TEST_USERNAME || 'standard_user';
